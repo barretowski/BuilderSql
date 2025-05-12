@@ -1,2 +1,4 @@
 temp
 .env
+consulta_erros.log
+__pycache__

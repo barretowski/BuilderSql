@@ -1,0 +1,2 @@
+cd ~/TExSandbox/Projetos/SQLBuiler
+python3 -m src.main consulta_arquivo_relacao_encomenda_pod 78699.csv
