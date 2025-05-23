@@ -8,9 +8,9 @@ def executar(arquivo_csv, arquivo_saida):
         for linha in reader:
             if len(linha) < 3:
                 continue
-            encoid, data, hora = linha
+            encoid, status, descricao, data, hora = linha
             values.append(
-                f"({encoid}, 1, 'ENTREGA REALIZADA', '{data}', '{hora}', NULL, '2025-05-09 08:23:32', 0, 36851, 0, 0, 0, 0)"
+                f"({encoid}, {status}, '{descricao}', '{data}', '{hora}', NULL, '{data} {hora}', 0, 36851, 0, 0, 0, 0)"
             )
 
     if not values:
